@@ -93,10 +93,16 @@ S: [c, f, t, w, a, d, f, p]
 T: [p, s, d, f, q]
 ```
 (a) What is the result of joining S and T?<br>
-Ans: Read 6 blocks, wrote 2 blocks. first output is | f | d | p | and second is | f |  |  |
+Ans: First output is | f | d | p | and second is | f |  |  |
 
 (b) If using the Sort-Merge Join algorithm, what are the contents of main memory after 13 blocks of I/O (including reads and writes)?<br>
-Ands: 
+```
+sorted S: [a, c, d, f, f, p, t, w]
+sorted T: [d, f, p, q, s]
+
+```
+
+
 
 (c) Would a hash join be more efficient in this case? Why/why not?<br>
 
