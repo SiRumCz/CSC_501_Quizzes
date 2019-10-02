@@ -14,8 +14,9 @@ Grace	1	HR	N	0	3	7	McKenzie Ave
 ![quiz 2 question 1 er diagram](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz2_q1_er.png)<br>
 table Positions has id as its primary key<br>
 (b) Show the actual table contents of each normalised relation<br>
-Employers
-| Name        |
+Employees
+
+| **Name**    |
 | :---------: |
 | Carol       |
 | Alice       |
@@ -24,16 +25,20 @@ Employers
 | Earl        |
 | Frances     |
 | Grace       |
+
 Positions
-| id          | title       |
+
+| **id**      | **title**   |
 | :---------: | :---------: |
 | 1           | HR          |
 | 2           | Sales       |
 | 4           | Training    |
 | 7           | Admin       |
 | 9           | Dev         |
+
 Offices
-| address       |
+
+| **address**   |
 | :-----------: |
 | Quadra St     |
 | Blanshard St  |
@@ -41,6 +46,39 @@ Offices
 | Hillside Ave  |
 | McKenzie Ave  |
 
+Workplaces
+
+| **name** | **office**   |
+| :------: | :----------: |
+| Carol    | Quadra St    |
+| Alice    | Blanshard St |
+| Bob      | Douglas St   |
+| Dave     | Quadra St    |
+| Earl     | Blanshard St |
+| Frances  | Hillside Ave |
+| Grace    | McKenzie Ave |
+
+Position_Location
+
+| **position_id** | **location** |
+| :-------------: | :----------: |
+| 1               | McKenzie Ave |
+| 2               | Blanshard St |
+| 4               | Hillside Ave |
+| 7               | Quadra St    |
+| 9               | Douglas St   |
+
+Employments
+
+| **employee_name** | **position_id** |
+| :---------------: | :-------------: |
+| Carol             | 7               |
+| Alice             | 2               |
+| Bob               | 9               |
+| Dave              | 7               |
+| Earl              | 2               |
+| Frances           | 4               |
+| Grace             | 1               |
 
 ## Question 2
 You have the following two arrays S and T, a block size of 3, and 3 blocks of main memory (for which you have reserved the first block for input from S, the second block for input from T, and the third block as an output buffer.
