@@ -11,7 +11,36 @@ Frances	4	Training	N	NULL	5	5	Hillside Ave
 Grace	1	HR	N	0	3	7	McKenzie Ave
 ```
 (a) Show the normalised schema as an ER diagram<br>
+![quiz 2 question 1 er diagram](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz2_q1_er.png)<br>
+table Positions has id as its primary key<br>
 (b) Show the actual table contents of each normalised relation<br>
+Employers
+| Name        |
+| :---------: |
+| Carol       |
+| Alice       |
+| Bob         |
+| Dave        |
+| Earl        |
+| Frances     |
+| Grace       |
+Positions
+| id          | title       |
+| :---------: | :---------: |
+| 1           | HR          |
+| 2           | Sales       |
+| 4           | Training    |
+| 7           | Admin       |
+| 9           | Dev         |
+Offices
+| address       |
+| :-----------: |
+| Quadra St     |
+| Blanshard St  |
+| Douglas St    |
+| Hillside Ave  |
+| McKenzie Ave  |
+
 
 ## Question 2
 You have the following two arrays S and T, a block size of 3, and 3 blocks of main memory (for which you have reserved the first block for input from S, the second block for input from T, and the third block as an output buffer.
