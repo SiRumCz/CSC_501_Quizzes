@@ -36,6 +36,8 @@ Positions
 | 7           | Admin       |
 | 9           | Dev         |
 
+*id is the primary key*
+
 Offices
 
 | **address**   |
@@ -68,6 +70,8 @@ Position_Location
 | 7               | Quadra St    |
 | 9               | Douglas St   |
 
+*position_id is a foreign key references Positions(id)*
+
 Employments
 
 | **employee_name** | **position_id** |
@@ -80,6 +84,8 @@ Employments
 | Frances           | 4               |
 | Grace             | 1               |
 
+*position_id is a foreign key references Positions(id)*
+
 ## Question 2
 You have the following two arrays S and T, a block size of 3, and 3 blocks of main memory (for which you have reserved the first block for input from S, the second block for input from T, and the third block as an output buffer.
 ```
@@ -87,7 +93,11 @@ S: [c, f, t, w, a, d, f, p]
 T: [p, s, d, f, q]
 ```
 (a) What is the result of joining S and T?<br>
+Ans: Read 6 blocks, wrote 2 blocks. first output is | f | d | p | and second is | f |  |  |
+
 (b) If using the Sort-Merge Join algorithm, what are the contents of main memory after 13 blocks of I/O (including reads and writes)?<br>
+Ands: 
+
 (c) Would a hash join be more efficient in this case? Why/why not?<br>
 
 ## Question 3
