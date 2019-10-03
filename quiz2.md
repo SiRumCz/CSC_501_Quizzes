@@ -87,7 +87,8 @@ Employments
 *position_id is a foreign key references Positions(id)*
 
 ## Question 2
-You have the following two arrays S and T, a block size of 3, and 3 blocks of main memory (for which you have reserved the first block for input from S, the second block for input from T, and the third block as an output buffer.
+You have the following two arrays S and T, a block size of 3, and 3 blocks of main memory (for which you have reserved the 
+first block for input from S, the second block for input from T, and the third block as an output buffer.
 ```
 S: [c, f, t, w, a, d, f, p]
 T: [p, s, d, f, q]
@@ -95,12 +96,14 @@ T: [p, s, d, f, q]
 (a) What is the result of joining S and T?<br>
 Ans: First output is | f | d | p | and second is | f |  |  |
 
-(b) If using the Sort-Merge Join algorithm, what are the contents of main memory after 13 blocks of I/O (including reads and writes)?<br>
+(b) If using the Sort-Merge Join algorithm, what are the contents of main memory after 13 blocks of I/O (including reads and 
+writes)?<br>
 ```
 sorted S: [a, c, d, f, f, p, t, w]
 sorted T: [d, f, p, q, s]
 ```
-Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 writes for sorting S and 3 reads and 3 writes for sorting T). So after 13 blocks of I/O, I have:
+Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 writes for sorting S and 3 reads and 3 writes for 
+sorting T). So after 13 blocks of I/O, I have:
 
 ```
 | S      | f | p |   |
@@ -132,11 +135,13 @@ Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 write
 | S      | t | s |   |
 | T      |   |   |   |
 | output |   |   |   |
-ouput empty after two comparisons, and finished.
+----- output is empty after two comparisons, and finished.
 ```
 
 (c) Would a hash join be more efficient in this case? Why/why not?<br>
-
+Ans: no, hash join is less efficient than sort-merge. BNL is O((8x5+3)/3) and sort-merge is O(8/3xlog(8/3)+3/3). Hash join is 
+O(8/3xP+3/3) which P is 2 for array S. Since P is 2 which is larger than log(8/3)(~1.41), it is less efficient than sort 
+merge algorithm.
 
 ## Question 3
 You are given the following (star schema) relations at a tour operator's office and query.
@@ -165,7 +170,32 @@ DA 91	Seattle	Maui	6:45
 ```
 *Query*: Retrieve the 3 cheapest packages to Oahu, indicating flight id, resort name, rating and duration.
 
-(a) What are the join fields, selection predicates, and projections necessary to produce this result? (You are welcome, but not required, to express this in SQL.)<br>
+(a) What are the join fields, selection predicates, and projections necessary to produce this result? (You are welcome, but 
+not required, to express this in SQL.)<br>
+Ans:
+```
+SELECT p.FlightID, r.Name, r.Rating, f.Duration
+FROM Packages AS p 
+LEFT JOIN Resorts AS r 
+ON p.ResortID = r.ResortID
+LEFT JOIN Flights AS f
+ON p.FlightID = f.FlightID
+WHERE r.Location = 'Oahu'
+ORDER BY p.Price
+LIMIT 3;
+```
 (b) Construct the Universal Relation associated with this star schema<br>
+Ans:
+
+ResortID|FlightID|Price|ResortID|Name|Location|Rating|FlightID|Origin|Destination|Duration
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
+3|WS 321|3200|3|Lago Grande|Oahu|4.0|WS 321|Victoria|Oahu|6:30
+3|AC 8055|2900|3|Lago Grande|Oahu|4.0|AC 8055|Victoria|Oahu|8:10
+1|AC 8055|2700|1|Beach Resort|Oahu|4.5|AC 8055|Victoria|Oahu|8:10
+1|WS 196|3950|1|Beach Resort|Oahu|4.5|WS 196|Victoria|Oahu|8:05
+3|WS 196|3400|3|Lago Grande|Oahu|4.0|WS 196|Victoria|Oahu|8:05
+2|AC 8767|1950|2|La Playa|Maui|3.5|AC 8767|Victoria|Maui|5:50
+2|DA 91|1800|2|La Playa|Maui|3.5|DA 91|Seattle|Maui|6:45
+
 (c) Illustrate the query result<br>
 (d) Indicate which join algorithm you would use and why<br>
