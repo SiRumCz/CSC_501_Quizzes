@@ -187,15 +187,24 @@ LIMIT 3;
 (b) Construct the Universal Relation associated with this star schema<br>
 Ans:
 
-ResortID|FlightID|Price|ResortID|Name|Location|Rating|FlightID|Origin|Destination|Duration
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
-3|WS 321|3200|3|Lago Grande|Oahu|4.0|WS 321|Victoria|Oahu|6:30
-3|AC 8055|2900|3|Lago Grande|Oahu|4.0|AC 8055|Victoria|Oahu|8:10
-1|AC 8055|2700|1|Beach Resort|Oahu|4.5|AC 8055|Victoria|Oahu|8:10
-1|WS 196|3950|1|Beach Resort|Oahu|4.5|WS 196|Victoria|Oahu|8:05
-3|WS 196|3400|3|Lago Grande|Oahu|4.0|WS 196|Victoria|Oahu|8:05
-2|AC 8767|1950|2|La Playa|Maui|3.5|AC 8767|Victoria|Maui|5:50
-2|DA 91|1800|2|La Playa|Maui|3.5|DA 91|Seattle|Maui|6:45
+ResortID|FlightID|Price|Name|Location|Rating|Origin|Destination|Duration
+--- | --- | --- | --- | --- | --- | --- | --- | --- 
+3|WS 321|3200|Lago Grande|Oahu|4.0|Victoria|Oahu|6:30
+3|AC 8055|2900|Lago Grande|Oahu|4.0|Victoria|Oahu|8:10
+1|AC 8055|2700|Beach Resort|Oahu|4.5|Victoria|Oahu|8:10
+1|WS 196|3950|Beach Resort|Oahu|4.5|Victoria|Oahu|8:05
+3|WS 196|3400|Lago Grande|Oahu|4.0|Victoria|Oahu|8:05
+2|AC 8767|1950|La Playa|Maui|3.5|Victoria|Maui|5:50
+2|DA 91|1800|La Playa|Maui|3.5|Seattle|Maui|6:45
 
 (c) Illustrate the query result<br>
+Ans:
+
+FlightID|Name|Rating|Duration
+--------|----|------|--------
+AC 8055|Beach Resort|4.5|8:10
+AC 8055|Lago Grande|4.0|8:10
+WS 321|Lago Grande|4.0|6:30
+
 (d) Indicate which join algorithm you would use and why<br>
+I will use hash join algorithm, because the records in each table are very small and they all can fit into memory block.  
