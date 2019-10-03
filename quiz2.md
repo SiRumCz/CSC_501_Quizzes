@@ -100,21 +100,43 @@ Ans: First output is | f | d | p | and second is | f |  |  |
 sorted S: [a, c, d, f, f, p, t, w]
 sorted T: [d, f, p, q, s]
 ```
-Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 writes for sorting S and 3 reads and 3 writes for sorting T). So after 13 blocks of I/O, I have 
+Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 writes for sorting S and 3 reads and 3 writes for sorting T). So after 13 blocks of I/O, I have:
 
-|**S**|f|p||
-|**T**|p|||
-|**output**|d|f||
+```
+| S      | f | p |   |
+| T      | p |   |   |
+| output | d | f |   |
+```
 
-|**S**|p|||
-|**T**|p|||
-|**output**|d|f|p|
+```
+| S      | p |   |   |
+| T      | p |   |   |
+| output | d | f |   |
+```
 
-write/clear output
+```
+| S      |   |   |   |
+| T      |   |   |   |
+| output | d | f | p |
+----- write/clear output
+```
 
+```
+| S      | t | w |   |
+| T      | q | s |   |
+| output |   |   |   |
+----- load first block of S and T
+```
 
+```
+| S      | t | s |   |
+| T      |   |   |   |
+| output |   |   |   |
+ouput empty after two comparisons, and finished.
+```
 
 (c) Would a hash join be more efficient in this case? Why/why not?<br>
+
 
 ## Question 3
 You are given the following (star schema) relations at a tour operator's office and query.
