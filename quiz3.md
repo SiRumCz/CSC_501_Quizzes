@@ -4,8 +4,13 @@ You are given the set of points below:
 {(3,7), (5,1), (3, 3), (4, 2), (2, 8)}
 
 (a) What are the bottom-left and top-right corner points of the minimum bounding box (MBB) that encloses all of them?<br>
+Ans: bottom left point is (2,1) and top right point is (5,8)
+
 (b) What is the centre point and radius of the minimum bounding circle (MBC) that encloses all of them?<br>
+Ans: center point is (3.5, 4.5) and radius is sqrt(58)/2 (~3.81)
+
 (c) Which (if any) of the above two objects contains point (4.5, 5.5)?<br>
+Ans: Both of them contains this point
 
 ## Question 2
 You are given the following events:
