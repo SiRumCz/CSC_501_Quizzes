@@ -47,7 +47,8 @@ ranges/intervals include that date.<br>
 You are given the following multidimensional data:
 
 Hockey Player Statistics
-Name	Goals	Assists
+**Name	Goals	Assists**
+```
 Kucherov	41	87
 McDavid	41	75
 Kane	44	66
@@ -58,12 +59,20 @@ MacKinnon	41	58
 Gaudreau	36	63
 Stamkos	45	53
 Barkov	35	61
- 
+```
 
 (a) Create a quad tree with goals on the x-axis and assists on the y-axis. You can assume that the data space only ranges 
 from [35, 50] goals and [50,90] assists.<br>
+
+
 (b) Create a binary tree of minimum bounding boxes (as in the lecture notes)<br>
+
+
 (c) How many point-to-point comparisons are required to traverse each of the structures that you created above in order 
 to identify which player has obtained 41 goals and 58 assists?<br>
+
+
 (d) Given a partitioning of the data space ([35,50], [50,90]) into 16 evenly-sized cells, what is the z-order of each 
 player?<br>
+
+
