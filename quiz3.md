@@ -38,7 +38,7 @@ earthquakes at [70,80), occurred between [ 8 Jan 2017,  8 Jan 2017]
 ```
 
 (b) Construct and show an interval tree from that set of intervals.<br>
-![interval tree](https://github.com/SiRumCz/CSC_501_Quizzes/tree/master/img/quiz3_q2_interval_tree.png)
+![interval tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q2_interval_tree.png)
 
 (c) Indicate which path in the tree would be traversed to find the date 1 Jan 2015 and report which latitude 
 ranges/intervals include that date.<br>
