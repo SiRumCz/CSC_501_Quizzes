@@ -10,13 +10,14 @@ Ans: bottom left point is (2,1) and top right point is (5,8)
 Ans: center point is (3.5, 4.5) and radius is sqrt(58)/2 (~3.81)
 
 (c) Which (if any) of the above two objects contains point (4.5, 5.5)?<br>
-Ans: Both of them contains this point
+Ans: Both of them contain point (4.5, 5.5)
 
 ## Question 2
 You are given the following events:
 
 Earthquake Magnitudes
-Lat	Long	Day	Magnitude
+**Lat	Long	Day	Magnitude**
+```
 59.83	-136.70	5 May 2017	6.3
 74.39	-92.42	8 Jan 2017	6.0
 51.62	-130.77	24 Apr 2015	6.2
@@ -24,11 +25,21 @@ Lat	Long	Day	Magnitude
 49.64	-127.73	24 Apr 2014	6.5
 51.18	-130.23	4 Sep 2013	6.0
 51.24	-130.40	3 Sep 2013	6.1
- 
+```
 
 (a) Create and show a set of intervals of earthquake activity, one for each 10-degree range of latitudes (e.g., 
 earthquakes at [40,50), occurred between [first_date, last_date]).<br>
+Ans:
+```
+earthquakes at [40,50), occurred between [24 Apr 2014, 24 Apr 2014]
+earthquakes at [50,60), occurred between [	3 Sep 2013,  5 May 2017]
+earthquakes at [60,70), occurred between [17 Jul 2014, 17 Jul 2014]
+earthquakes at [70,80), occurred between [ 8 Jan 2017,  8 Jan 2017]
+```
+
 (b) Construct and show an interval tree from that set of intervals.<br>
+![interval tree](https://github.com/SiRumCz/CSC_501_Quizzes/tree/master/img/quiz3_q2_interval_tree.png)
+
 (c) Indicate which path in the tree would be traversed to find the date 1 Jan 2015 and report which latitude 
 ranges/intervals include that date.<br>
 
