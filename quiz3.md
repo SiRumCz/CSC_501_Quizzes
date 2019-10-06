@@ -82,6 +82,7 @@ Ans: 2 comparisons.
 player?<br>
 Ans:
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_zorder.png)
+
 **Name	Goals	Assists Z-order**
 ```
 Kucherov	41	87      1
