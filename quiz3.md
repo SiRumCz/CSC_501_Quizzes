@@ -32,7 +32,7 @@ earthquakes at [40,50), occurred between [first_date, last_date]).<br>
 Ans:
 ```
 earthquakes at [40,50), occurred between [24 Apr 2014, 24 Apr 2014]
-earthquakes at [50,60), occurred between [	3 Sep 2013,  5 May 2017]
+earthquakes at [50,60), occurred between [ 3 Sep 2013,  5 May 2017]
 earthquakes at [60,70), occurred between [17 Jul 2014, 17 Jul 2014]
 earthquakes at [70,80), occurred between [ 8 Jan 2017,  8 Jan 2017]
 ```
@@ -50,15 +50,15 @@ Hockey Player Statistics<br>
 **Name	Goals	Assists**
 ```
 Kucherov	41	87
-McDavid	  41	75
-Kane	    44	66
+McDavid		41	75
+Kane			44	66
 Draisaitl	50	55
 Marchand	36	64
-Crosby	  35	65
+Crosby		35	65
 MacKinnon	41	58
 Gaudreau	36	63
-Stamkos	  45	53
-Barkov	  35	61
+Stamkos		45	53
+Barkov		35	61
 ```
 
 (a) Create a quad tree with goals on the x-axis and assists on the y-axis. You can assume that the data space only ranges 
@@ -86,14 +86,14 @@ Ans:
 **Name	Goals	Assists Z-order**
 ```
 Kucherov	41	87      1
-McDavid	  41	75      3
-Crosby	  35	65      8
+McDavid		41	75      3
+Crosby		35	65      8
 Marchand	36	64      8
 Gaudreau	36	63      8
-Barkov	  35	61      8
+Barkov		35	61      8
 MacKinnon	41	58      11
-Kane	    44	66      12
-Stamkos	  45	53      14
+Kane			44	66      12
+Stamkos		45	53      14
 Draisaitl	50	55      15
 ```
 
