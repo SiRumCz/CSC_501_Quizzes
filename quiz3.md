@@ -50,20 +50,23 @@ Hockey Player Statistics<br>
 **Name	Goals	Assists**
 ```
 Kucherov	41	87
-McDavid	41	75
-Kane	44	66
+McDavid	  41	75
+Kane	    44	66
 Draisaitl	50	55
 Marchand	36	64
-Crosby	35	65
+Crosby	  35	65
 MacKinnon	41	58
 Gaudreau	36	63
-Stamkos	45	53
-Barkov	35	61
+Stamkos	  45	53
+Barkov	  35	61
 ```
 
 (a) Create a quad tree with goals on the x-axis and assists on the y-axis. You can assume that the data space only ranges 
 from [35, 50] goals and [50,90] assists.<br>
-
+Ans:
+quad tree wit h2x2 grid. mid point is (42.5,70).
+![quad tree_grid](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3.png)
+![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_tree.png)
 
 (b) Create a binary tree of minimum bounding boxes (as in the lecture notes)<br>
 
