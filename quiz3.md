@@ -15,7 +15,7 @@ Ans: Both of them contain point (4.5, 5.5)
 ## Question 2
 You are given the following events:
 
-Earthquake Magnitudes
+Earthquake Magnitudes<br>
 **Lat	Long	Day	Magnitude**
 ```
 59.83	-136.70	5 May 2017	6.3
@@ -46,7 +46,7 @@ ranges/intervals include that date.<br>
 ## Question 3
 You are given the following multidimensional data:
 
-Hockey Player Statistics
+Hockey Player Statistics<br>
 **Name	Goals	Assists**
 ```
 Kucherov	41	87
