@@ -69,15 +69,30 @@ quad tree wit h2x2 grid. mid point is (42.5,70).
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_tree.png)
 
 (b) Create a binary tree of minimum bounding boxes (as in the lecture notes)<br>
+Ans:
 ![quad tree_grid](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs.png)
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs_tree.png)
 
 
 (c) How many point-to-point comparisons are required to traverse each of the structures that you created above in order 
 to identify which player has obtained 41 goals and 58 assists?<br>
-
+Ans: 2 comparisons.
 
 (d) Given a partitioning of the data space ([35,50], [50,90]) into 16 evenly-sized cells, what is the z-order of each 
 player?<br>
-
+Ans:
+![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_zorder.png)
+**Name	Goals	Assists Z-order**
+```
+Kucherov	41	87      1
+McDavid	  41	75      3
+Crosby	  35	65      8
+Marchand	36	64      8
+Gaudreau	36	63      8
+Barkov	  35	61      8
+MacKinnon	41	58      11
+Kane	    44	66      12
+Stamkos	  45	53      14
+Draisaitl	50	55      15
+```
 
