@@ -51,7 +51,7 @@ Hockey Player Statistics<br>
 ```
 Kucherov	41	87
 McDavid		41	75
-Kane		  44	66
+Kane		44	66
 Draisaitl	50	55
 Marchand	36	64
 Crosby		35	65
@@ -92,7 +92,7 @@ Marchand	36	64      8
 Gaudreau	36	63      8
 Barkov		35	61      8
 MacKinnon	41	58      11
-Kane		  44	66      12
+Kane		44	66      12
 Stamkos		45	53      14
 Draisaitl	50	55      15
 ```
