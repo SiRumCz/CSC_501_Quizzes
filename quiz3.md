@@ -69,6 +69,8 @@ quad tree wit h2x2 grid. mid point is (42.5,70).
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_tree.png)
 
 (b) Create a binary tree of minimum bounding boxes (as in the lecture notes)<br>
+![quad tree_grid](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs.png)
+![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs_tree.png)
 
 
 (c) How many point-to-point comparisons are required to traverse each of the structures that you created above in order 
