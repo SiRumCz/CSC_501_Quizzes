@@ -29,7 +29,7 @@ Earthquake Magnitudes<br>
 
 (a) Create and show a set of intervals of earthquake activity, one for each 10-degree range of latitudes (e.g., 
 earthquakes at [40,50), occurred between [first_date, last_date]).<br>
-Ans:
+Ans:<br>
 ```
 earthquakes at [40,50), occurred between [24 Apr 2014, 24 Apr 2014]
 earthquakes at [50,60), occurred between [ 3 Sep 2013,  5 May 2017]
@@ -42,6 +42,9 @@ earthquakes at [70,80), occurred between [ 8 Jan 2017,  8 Jan 2017]
 
 (c) Indicate which path in the tree would be traversed to find the date 1 Jan 2015 and report which latitude 
 ranges/intervals include that date.<br>
+Ans: to find 01/01/2015<br>
+![interval tree_path](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q2_interval_tree_path.png)
+latitude ranges that include this date is [50, 60)
 
 ## Question 3
 You are given the following multidimensional data:
@@ -63,13 +66,13 @@ Barkov		35	61
 
 (a) Create a quad tree with goals on the x-axis and assists on the y-axis. You can assume that the data space only ranges 
 from [35, 50] goals and [50,90] assists.<br>
-Ans:
+Ans:<br>
 quad tree wit h2x2 grid. mid point is (42.5,70).
 ![quad tree_grid](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3.png)
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_tree.png)
 
 (b) Create a binary tree of minimum bounding boxes (as in the lecture notes)<br>
-Ans:
+Ans:<br>
 ![quad tree_grid](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs.png)
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_mbbs_tree.png)
 
@@ -80,7 +83,7 @@ Ans: 2 comparisons.
 
 (d) Given a partitioning of the data space ([35,50], [50,90]) into 16 evenly-sized cells, what is the z-order of each 
 player?<br>
-Ans:
+Ans:<br>
 ![quad tree](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz3_q3_zorder.png)
 
 **Name	Goals	Assists Z-order**
