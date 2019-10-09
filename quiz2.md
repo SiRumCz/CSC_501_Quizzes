@@ -12,6 +12,9 @@ Grace	1	HR	N	0	3	7	McKenzie Ave
 ```
 (a) Show the normalised schema as an ER diagram<br>
 ![quiz 2 question 1 er diagram](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz2_q1_er.png)<br>
+
+**Note: I need to add 1:N, N:N relations to the diagram**
+
 table Positions has id as its primary key<br>
 (b) Show the actual table contents of each normalised relation<br>
 Employees
@@ -103,7 +106,8 @@ sorted S: [a, c, d, f, f, p, t, w]
 sorted T: [d, f, p, q, s]
 ```
 Ans: I assume sort of S and T took 10 blocks of I/O in total(2 reads and 2 writes for sorting S and 3 reads and 3 writes for 
-sorting T). So after 13 blocks of I/O, I have:
+sorting T). So after 13 blocks of I/O, I have:<br>
+**I wrote them in wrong order, it is 2 reads and writes for sorting T, and 3 reads and writes for sorting S**
 
 ```
 | S      | f | p |   |
