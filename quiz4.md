@@ -6,7 +6,7 @@
 2. You are given the following relation:
 
 Subject | Predicate | Object
---- | --- | ---
+:--- |: --- |: ---
 Xi Jinping | PresidentOf | China
 Xi Mingze | isDaughterTo | Xi Jinping
 Xi Jinping | isFatherTo | Xi Mingze
@@ -20,3 +20,10 @@ Zhejiang University | LocatedIn | Hangzhou
 Harvard University | LocatedIn | Boston
 Boston | CityIn | United States of America (USA)
 Hangzhou | CityIn | China
+
+(a) Represent the relation as a (knowledge) graph
+
+b) Show the paths matched by the following conjunctive pattern matching query:
+```
+x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
+```
