@@ -27,3 +27,16 @@ x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
 ```
 ![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q2b.png)<br>
 
+You are given the following road network:
+![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q3.png)<br>
+(a) Show this graph as an adjacency matrix, an adjacency list, and an edge list
+
+(b) Calculate the average global clustering coefficient (CC) of the graph
+
+(c) Calculate the average path length (APL) of the graph. Show your work.
+
+(d) Assume that all edge lengths have unit cost (i.e., cost = 1 or unweighted). Now
+recalculate the average path length (APL). Show your work.
+
+(e) How many edges are traversed by Dijkstra’s algorithm to find the shortest path
+from Sooke to the ski resort at Mt Washington?
