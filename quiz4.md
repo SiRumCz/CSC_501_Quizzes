@@ -41,7 +41,7 @@ You are given the following road network:
 |**Sooke**||240||0|||40|
 |**Tofino**|125||||0|40||
 |**Ucluelet**|100||||40|0||
-|**Victoria**|150||40|||0|
+|**Victoria**||150||40|||0|
 
 (b) Calculate the average global clustering coefficient (CC) of the graph
 
