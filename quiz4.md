@@ -1,10 +1,9 @@
 ## CSC 501: Algorithms and Data Models
 
 1. Draw a graph with a degree distribution of: <5, 3, 2, 2, 2, 2, 0>.
-![graph](img/quiz4_q1.png)<br>
+![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q1.png)<br>
 
 2. You are given the following relation:
-
 Subject | Predicate | Object
 :--- | :--- | :---
 Xi Jinping | PresidentOf | China
@@ -20,10 +19,11 @@ Zhejiang University | LocatedIn | Hangzhou
 Harvard University | LocatedIn | Boston
 Boston | CityIn | United States of America (USA)
 Hangzhou | CityIn | China
-
 (a) Represent the relation as a (knowledge) graph
-
+![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q2a.png)<br>
 b) Show the paths matched by the following conjunctive pattern matching query:
 ```
 x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
 ```
+![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q2b.png)<br>
+
