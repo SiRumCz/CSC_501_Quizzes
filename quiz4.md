@@ -30,6 +30,18 @@ x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
 You are given the following road network:
 ![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q3.png)<br>
 (a) Show this graph as an adjacency matrix, an adjacency list, and an edge list
+```
+--- Adjacency Matrix
+```            
+||Alberni|Parksville|Skiing|Sooke|Tofino|Ucluelet|Victoria|
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+|**Alberni**|0|50|110||125|100||
+|**Parksville**|50|0|100|240|||150|
+|**Skiing**|110|100|0|||||
+|**Sooke**||240||0|||40|
+|**Tofino**|125||||0|40||
+|**Ucluelet**|100||||40|0||
+|**Victoria**|150||40|||0|
 
 (b) Calculate the average global clustering coefficient (CC) of the graph
 
