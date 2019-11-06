@@ -6,6 +6,7 @@
 2. You are given the following relation:
 
 Subject | Predicate | Object
+--- | --- | ---
 Xi Jinping | PresidentOf | China
 Xi Mingze | isDaughterTo | Xi Jinping
 Xi Jinping | isFatherTo | Xi Mingze
