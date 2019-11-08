@@ -30,9 +30,9 @@ x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
 You are given the following road network:
 ![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q3.png)<br>
 (a) Show this graph as an adjacency matrix, an adjacency list, and an edge list
-```
+
 --- Adjacency Matrix
-```            
+        
 ||Alberni|Parksville|Skiing|Sooke|Tofino|Ucluelet|Victoria|
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 |**Alberni**|0|50|110||125|100||
@@ -42,6 +42,28 @@ You are given the following road network:
 |**Tofino**|125||||0|40||
 |**Ucluelet**|100||||40|0||
 |**Victoria**||150||40|||0|
+
+--- Adjacency List
+
+**Alberni** : (Parksville, 50), (Skiing, 110), (Tofino, 125), (Ucluelet, 100)<br>
+**Parksville** : (Alberni, 50), (Skiing, 100), (Sooke, 240), (Victoria, 150)<br>
+**Skiing** : (Alberni, 110), (Parksville, 100)<br>
+**Sooke** : (Parksville, 240), (Victoria, 40)<br>
+**Tofino** : (Alberni, 125), (Ucluelet, 40)<br>
+**Ucluelet** : (Alberni, 100), (Tofino, 40)<br>
+**Victoria** : (Parksville150), (Sooke, 40)<br>
+
+--- Edge List
+
+Alberni Parksville  50<br>
+Alberni Skiing 110<br>
+Alberni Tofino 125<br>
+Alberni Ucluelet 100<br>
+Parksville Skiing 100<br>
+Parksville Sooke 240<br>
+Parksville Victoria 150<br>
+Sooke Victoria 40<br>
+Tofino Ucluelet 40<br>
 
 (b) Calculate the average global clustering coefficient (CC) of the graph
 
