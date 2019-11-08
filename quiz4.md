@@ -67,7 +67,18 @@ Tofino Ucluelet 40<br>
 
 (b) Calculate the average global clustering coefficient (CC) of the graph
 
+Global CC = 3/(3+3) = 0.5
+
 (c) Calculate the average path length (APL) of the graph. Show your work.
+
+```
+                Alberni         Parksville      Sooke   Skiing          Tofino          Ucluelet      Victoria  
+Alberni         0               50              240     110             125             100             200
+Parksville      50              0               190     100             175             150             150
+Sooke           240             190             0       290             365             340             40
+Skiing          110             100             290     0               235             210             250
+Tofino          125             175             365     235             0               40              325
+```
 
 (d) Assume that all edge lengths have unit cost (i.e., cost = 1 or unweighted). Now
 recalculate the average path length (APL). Show your work.
