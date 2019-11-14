@@ -22,11 +22,36 @@ light becomes the can
 ```
 (a) How many bigrams are in the haiku?
 
+(the, can)  
+(can, can) 
+(can, rust)
+(can, becomes)
+(rust, once)
+(once, the)
+(becomes, light)
+(becomes, the) 
+(light, rust)
+(light, becomes)
+
+total: 11
+
 (b) How many 1-skip-grams are in the haiku?
+
+(the, can, can)
+(can, can, rust)
+(can, rust, once)
+(once, the, can)
+(the, can, becomes)
+(can, becomes, light)
+(becomes, light, rust)
+(light, becomes, the)
+(becomes, the, can)
+
+total: 9
 
 (c) Draw a |V| × |V| transition matrix and a graph to illustrate the transition probabilities for each bigram in the corpus
 
-(d) Draw a second |V | × |V | matrix where a cell (i, j) is coloured:
+(d) Draw a second |V| × |V| matrix where a cell (i, j) is coloured:
 ```
 white if pr(i,j) = 0
 blue if pr(i,j) < pr(i) · pr(j)
