@@ -76,13 +76,16 @@ cc = 3(3)/(3(3)+8) = 9/17
 (c) Calculate the average path length (APL) of the graph. Show your work.
 
 ```
-                Alberni         Parksville      Sooke   Skiing          Tofino          Ucluelet      Victoria  
-Alberni         0               50              240     110             125             100             200
-Parksville      50              0               190     100             175             150             150
-Sooke           240             190             0       290             365             340             40
-Skiing          110             100             290     0               235             210             250
-Tofino          125             175             365     235             0               40              325
+                Alberni         Parksville      Skiing  Sooke          Tofino           Ucluelet         Victoria  
+Alberni         0               50              110     240            125              100              200
+Parksville      50              0               100     190            175              150              150
+Skiing          110             100             0       290            235              210              250
+Sooke           240             190             290     0              365              340              40
+Tofino          125             175             365     235            0                40               325
+Ucluelet        100             150             210     340            40               0                300
+Victoria        200             150             250     40             325              300              0
 ```
+APL = (825+815+1195+1465+1265+1140+1265)/7(6) = 7970/42 = ~189.76
 
 (d) Assume that all edge lengths have unit cost (i.e., cost = 1 or unweighted). Now
 recalculate the average path length (APL). Show your work.
