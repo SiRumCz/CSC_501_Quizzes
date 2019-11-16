@@ -65,9 +65,13 @@ Parksville Victoria 150<br>
 Sooke Victoria 40<br>
 Tofino Ucluelet 40<br>
 
-(b) Calculate the average global clustering coefficient (CC) of the graph
+(b) Calculate the global clustering coefficient (CC) of the graph
 
-Global CC = 3/(3+3) = 0.5
+triangles: (uc, to, al), (al, sk, pa), (pa, so, vi)
+
+triads: (to, al, sk), (uc, al, pa), (sk, pa, vi), (pa, al, so), (to, al, pa), (uc, al, sk), (sk, pa, so), (al, pa, vi)
+
+cc = 3(3)/(3(3)+8) = 9/17
 
 (c) Calculate the average path length (APL) of the graph. Show your work.
 
