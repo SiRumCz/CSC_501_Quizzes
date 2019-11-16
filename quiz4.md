@@ -25,6 +25,8 @@ b) Show the paths matched by the following conjunctive pattern matching query:
 ```
 x `CityIn' y ∧ w `LocatedIn' x ∧ `Mingze' v w
 ```
+path 1: x = Boston, y = USA, w = Harvard University, v = 'StudiedAt'<br>
+path 2: x = Hangzhou, y = China, w = Zhejiang University, v = 'StudiedAt'<br>
 ![graph](https://github.com/SiRumCz/CSC_501_Quizzes/blob/master/img/quiz4_q2b.png)<br>
 
 You are given the following road network:
