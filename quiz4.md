@@ -89,6 +89,25 @@ APL = (825+815+1195+1465+1265+1140+1265)/7(6) = 7970/42 = ~189.76
 
 (d) Assume that all edge lengths have unit cost (i.e., cost = 1 or unweighted). Now
 recalculate the average path length (APL). Show your work.
+```
+                Alberni Parksville      Skiing  Sooke   Tofino  Ucluelet        Victoria  
+Alberni         0       1               1       2       1       1               2 
+Parksville      1       0               1       1       2       2               1
+Skiing          1       1               0       2       2       2               2      
+Sooke           2       1               2       0       3       3               1         
+Tofino          1       2               2       3       0       1               3        
+Ucluelet        1       2               2       3       1       0               3       
+Victoria        2       1               2       1       3       3               0       
+```
+APL = (8+8+10+12+12+12+12)/42 = 1.76 *hops*
 
 (e) How many edges are traversed by Dijkstra’s algorithm to find the shortest path
 from Sooke to the ski resort at Mt Washington?
+```
+visited: sooke, victoria, parksville, alberni, skiing
+2 edges: sooke - victoria + parksville
+1 edges: victoria - parksville
+2 edges: parksville - alberni + skiing
+3 edges: alberni - ucluelet + tofino + skiing
+shortest cost: 40+150+100
+```
