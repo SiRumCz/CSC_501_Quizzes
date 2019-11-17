@@ -76,3 +76,26 @@ red if pr(i,j) > pr(i) · pr(j)
 
 (g) Calculate TF-IDF vectors for each of the three lines of the haiku and report which
 two lines are most similar
+```
+TF vectors
+the can rust  once  becomes light
+1   2   1     1     0       0
+1   1   1     1     1       1
+1   1   0     0     1       1
+
+IDF vector:
+the     can     rust    once    becomes light
+lg(3/3) lg(3/3) lg(3/2) lg(3/2) lg(3/2) lg(3/2)
+
+TF-IDF TF*IDF:
+the can rust      once      becomes   light
+0   0   1*lg(3/2) 1*lg(3/2) 0         0
+0   0   1*lg(3/2) 1*lg(3/2) 1*lg(3/2) 1*lg(3/2)
+0   0   0         0         1*lg(3/2) 1*lg(3/2)
+
+v0 dot v2 = 0
+v0 dot v1 = 2lg(3/2)
+v1 dot v2 = 2lg(3/2)
+
+line 1 and 2 are most similar
+```
