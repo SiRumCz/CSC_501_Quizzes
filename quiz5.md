@@ -21,22 +21,30 @@ once the can becomes light rust
 light becomes the can
 ```
 (a) How many bigrams are in the haiku?
+```
+includes newlines:
 
-(the, can)  
-(can, can) 
+(the, can)
+(can, can)
 (can, rust)
-(can, becomes)
 (rust, once)
 (once, the)
+(the, can)
+(can, becomes)
 (becomes, light)
-(becomes, the) 
 (light, rust)
 (light, becomes)
+(becomes, the)
+(the, can)
 
-total: 11
+total: 12
+```
+with newlines: SUM(i)(li-1) = 4+5+3 = 12<br>
+without: li-1 = 15-1 = 14
 
 (b) How many 1-skip-grams are in the haiku?
-
+```
+12 0-skip-grams (0-skip-grams is a subset of 1-skip-grams)
 (the, can, can)
 (can, can, rust)
 (can, rust, once)
@@ -47,7 +55,10 @@ total: 11
 (light, becomes, the)
 (becomes, the, can)
 
-total: 9
+total: 12+9 = 21
+```
+with newlines: SUM(i)(li-1+li-2) = SUM(i)(2li-3) = 7+9+5 = 21<br>
+without: 2li-3 = 2(15)-3 = 27
 
 (c) Draw a |V| × |V| transition matrix and a graph to illustrate the transition probabilities for each bigram in the corpus
 
