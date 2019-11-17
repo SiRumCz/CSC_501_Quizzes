@@ -25,17 +25,17 @@ light becomes the can
 includes newlines:
 
 (the, can)
+(the, can)
+(the, can)
 (can, can)
 (can, rust)
 (rust, once)
 (once, the)
-(the, can)
 (can, becomes)
 (becomes, light)
 (light, rust)
 (light, becomes)
 (becomes, the)
-(the, can)
 
 total: 12
 ```
